@@ -109,11 +109,11 @@ const cardNumberMasked = IMask(cardNumber, cardNumberPattern)
 cardNumberMasked.on("accept", () => {
   const cardType = cardNumberMasked.masked.currentMask.cardtype
   setCardType(cardType)
-  updateCardMasked(cardNumberMasked.value)
+  updateNumberMasked(cardNumberMasked.value)
 })
 
 function updateNumberMasked(number) {
-  const ccNumber = document.querySelector(".cc-number")
+  const ccNumber = document.querySelector(".cc-number ")
 
   ccNumber.innerText = number.length === 0 ? "1234 5678 9012 3456" : number
 }
