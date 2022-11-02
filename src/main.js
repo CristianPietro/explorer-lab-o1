@@ -113,7 +113,7 @@ cardNumberMasked.on("accept", () => {
 })
 
 function updateNumberMasked(number) {
-  const ccNumber = document.querySelector(".cc-number ")
+  const ccNumber = document.querySelector(".cc-number")
 
   ccNumber.innerText = number.length === 0 ? "1234 5678 9012 3456" : number
 }
